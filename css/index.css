@@ -14,6 +14,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
     z-index: 2;
+    position: relative;
 }
 
 .logo-container {
@@ -100,6 +101,7 @@
     font-size: 18px;
     color: #000000;
     text-decoration: none;
+    position: relative;
 }
 
 .dropdown {
@@ -110,15 +112,17 @@
 .dropdown-content {
     display: block;
     position: absolute;
+    top: 100%;
+    left: 0;
     background-color: white;
-    text-shadow: 0px 8px 16px rgb(255, 255, 255);
     min-width: 160px;
-    box-shadow: 0px 8px 16px rgba(253, 253, 253, 0.2);
-    z-index: 1;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
     opacity: 0;
-    transform: translateX(-20px);
+    transform: translateY(10px);
     visibility: hidden;
     transition: all 0.3s ease;
+    margin-top: 10px;
 }
 
 .dropdown:hover .dropdown-content {
@@ -181,6 +185,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90vw;
+    max-width: 1200px;
     height: auto;
     background-color: white;
     padding: 40px;
@@ -189,8 +194,12 @@
     z-index: 1000;
     opacity: 0;
     visibility: hidden;
-    transition: all 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
     pointer-events: none;
+}
+
+.nav-item::before {
+    display: none;
 }
 
 .nav-item:hover .hover-images {
@@ -204,7 +213,6 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
     padding: 20px;
-    max-width: 1400px;
     margin: 0 auto;
 }
 
@@ -290,6 +298,7 @@
     font-weight: bold;
     color: #000000;
     text-decoration: none;
+    position: relative;
 }
 
 .banner {
