@@ -108,13 +108,23 @@
 }
 
 .dropdown-content {
-    display: none;
+    display: block;
     position: absolute;
     background-color: white;
-    text-shadow:  0px 8px 16px rgb(255, 255, 255);
+    text-shadow: 0px 8px 16px rgb(255, 255, 255);
     min-width: 160px;
     box-shadow: 0px 8px 16px rgba(253, 253, 253, 0.2);
     z-index: 1;
+    opacity: 0;
+    transform: translateX(-20px);
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.dropdown:hover .dropdown-content {
+    opacity: 1;
+    transform: translateX(0);
+    visibility: visible;
 }
 
 .dropdown-content a {
@@ -123,20 +133,19 @@
     text-decoration: none;
     display: block;
     padding-left: 30px;
+    transform: translateX(-10px);
+    opacity: 0;
+    transition: all 0.3s ease;
+    transition-delay: calc(0.1s * var(--item-index));
+}
+
+.dropdown:hover .dropdown-content a {
+    transform: translateX(0);
+    opacity: 1;
 }
 
 .dropdown-content a:hover {
     background-color: #f1f1f1;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.drop-nav:after {
-    content: ' ▼';
-    font-size: 12px;
-    color: #000000;
 }
 
 .drop-nav:hover {
@@ -151,7 +160,7 @@
     transform: translateY(-50%);
     width: 20px;
     height: 20px;
-    background-image: url('/asset/paws.png'); 
+    background-image: url('/asset/logo/paws.png'); 
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -166,43 +175,79 @@
 
 
 .hover-images {
-    display: none;
-    position: fixed; 
+    display: block;
+    position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -45%);
-    width: 85vw; 
-    height: 75vh; 
+    transform: translate(-50%, -50%);
+    width: 90vw;
+    height: auto;
     background-color: white;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    z-index: 1000; 
+    padding: 40px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+.nav-item:hover .hover-images {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
 }
 
 .image-row {
-    display: flex;
-    justify-content: space-around;
-    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    padding: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.image-row a {
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: all 0.3s ease-in-out;
+}
+
+.image-row a:nth-child(1) { transition-delay: 0.1s; }
+.image-row a:nth-child(2) { transition-delay: 0.15s; }
+.image-row a:nth-child(3) { transition-delay: 0.2s; }
+.image-row a:nth-child(4) { transition-delay: 0.25s; }
+.image-row a:nth-child(5) { transition-delay: 0.3s; }
+.image-row a:nth-child(6) { transition-delay: 0.35s; }
+
+.nav-item:hover .image-row a {
+    opacity: 1;
+    transform: translateX(0);
 }
 
 .image-row img {
     width: 100%;
-    height: auto;
-    border-radius: 8px; 
-    transition: transform 0.3s ease;
+    height: 200px;
+    object-fit: contain;
+    padding: 20px;
+    background-color: white;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #eee;
 }
 
 .image-row img:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.hover-images::before {
+    display: none;
 }
 
 .nav-item:hover .hover-images {
-    display: flex; 
+    display: block;
 }
 
 .logo-container {
@@ -321,4 +366,145 @@
     margin: 5px 0 0;
     font-size: 16px;
     text-align: center;
+}
+
+.brand-nav:hover {
+    color: #c9a1fc;
+    transition: color 0.3s ease;
+}
+
+.drop-nav:hover {
+    color: #c9a1fc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    color: #c9a1fc;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #c9a1fc;
+    transition: color 0.3s ease;
+}
+
+.nav-item:hover .brand-nav,
+.nav-item.active .brand-nav {
+    color: #c9a1fc;
+    transition: color 0.3s ease;
+}
+
+.dropdown:hover .drop-nav,
+.dropdown.active .drop-nav {
+    color: #c9a1fc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.product-section {
+    padding: 40px 20px;
+    background-color: #f8f9fa;
+}
+
+.product-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+.product-title::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 60%;
+    height: 3px;
+    background-color: #c9a1fc;
+    border-radius: 2px;
+}
+
+.product-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.product-card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.product-info {
+    text-align: center;
+}
+
+.product-info h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 18px;
+    color: #c9a1fc;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.add-to-cart {
+    background-color: #c9a1fc;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.add-to-cart:hover {
+    background-color: #b88af9;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .product-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .product-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .product-container {
+        grid-template-columns: 1fr;
+    }
 }
