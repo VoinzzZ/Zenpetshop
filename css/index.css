@@ -320,6 +320,7 @@
 .collection-item .overlay p {
     margin: 5px 0 0;
     font-size: 16px;
+<<<<<<< HEAD
     text-align: center;
 }
 
@@ -409,4 +410,11 @@
     display: flex;
     align-items: center;
     margin-bottom: 10px;
+=======
+}
+
+.zpf    {
+    margin-bottom: 1px;
+    padding-bottom: 1px;
+>>>>>>> a384e58e05eb9bb95f32d81489c9de9164865192
 }
