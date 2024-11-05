@@ -363,9 +363,7 @@
 }
 
 .collection-item .overlay h3 {
- 
-
-   margin: 0;
+    margin: 0;
     font-size: 24px;
     font-weight: 700;
     text-align: center;
@@ -516,4 +514,15 @@
     .product-container {
         grid-template-columns: 1fr;
     }
+}
+
+
+.icon:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(255, 0, 0, 0.15);
+}
+
+.maps {
+    margin-bottom: 10vh;
+    margin-left: 20vh;
 }
