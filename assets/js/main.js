@@ -28,4 +28,3 @@ dropdown.addEventListener('mouseleave', () => {
         }
     }, 300);
 });
-  

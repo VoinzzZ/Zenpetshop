@@ -522,7 +522,44 @@
     box-shadow: 0 4px 12px rgba(255, 0, 0, 0.15);
 }
 
-.maps {
-    margin-bottom: 10vh;
-    margin-left: 20vh;
+.lokasi-toko {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
 }
+
+.maps-and-desc {
+    display: flex;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.maps {
+    margin-left: 20vh;
+    margin-bottom: 0;
+}
+
+.dec-maps {
+    margin-left: 10vh;
+}
+
+.dec-maps h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #c9a1fc;
+    outline: #000000;
+    -webkit-text-stroke: 0.5px rgb(223, 127, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.dec-maps p {
+    padding-top: 5%; 
+    font-size: 1.3rem;
+    color: #000000;
+    font-weight: 5px;
+    margin-top: -10px;
+    -webkit-text-stroke: .2px rgb(255, 255, 255);
+    font-weight: 1000;
+}
+
