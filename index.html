@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ZEN PETSHOP</title>
     <link rel="shortcut icon" href="/asset/paws.png" type="image/x-icon">
+    <link href='https:/unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="https:/cdn.tailwindcss.com"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="css/index.css">
-    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
     <!--Header e wakk-->
@@ -15,11 +16,11 @@
       <!--logo ambek tagline e wak-->
         <div class="logo-container">
             <div class="logo-image-container">
-                <img src="/asset/logo/logo-removebg-preview_.png" alt="Logo Before" class="logo-before">
+                 <img src="assets/imgs/logo/logo-removebg-preview_.png" alt="Logo Before" class="logo-before">
             </div>
             <div class="text-and-nav">
                 <div class="text-container">
-                    <a href="index.html">
+                    <a href="/">
                         <h1 class="logo">ZEN PETSHOP</h1>
                     </a>
                     <p class="tagline">Penuhi kebutuhan Peliharaan Disini!</p>
@@ -31,23 +32,23 @@
                         <a href="#" class="brand-nav">Brand</a>
                         <div class="hover-images">
                             <div class="image-row">
-                                <a href="https://example.com/link1" target="_blank">
-                                    <img src="asset/logoBrand/Whiskas-Logo.svg" alt="Image 1">
+                                <a href="" target="_blank">
+                                    <img src="assets/imgs/logoBrand/Whiskas-Logo.svg" alt="Image 1">
                                 </a>
-                                <a href="https://example.com/link2" target="_blank">
-                                    <img src="asset/logoBrand/bolt-cat.svg" alt="Image 2">
+                                <a href="" target="_blank">
+                                    <img src="assets/imgs/logoBrand/bolt-cat.svg" alt="Image 2">
                                 </a>
-                                <a href="https://example.com/link3" target="_blank">
-                                    <img src="asset/logoBrand/meo.svg" alt="Image 3">
+                                <a href="" target="_blank">
+                                    <img src="assets/imgs/logoBrand/meo.svg" alt="Image 3">
                                 </a>
-                                <a href="https://example.com/link4" target="_blank">
-                                    <img src="asset/logoBrand/Friskies-Logo.svg" alt="Image 4">
+                                <a href="" target="_blank">
+                                    <img src="assets/imgs/logoBrand/Friskies-Logo.svg" alt="Image 4">
                                 </a>
-                                <a href="https://example.com/link5" target="_blank">
-                                    <img src="asset/logoBrand/Royal-Canin-Logo.svg" alt="Image 5">
+                                <a href="" target="_blank">
+                                    <img src="assets/imgs/logoBrand/Royal-Canin-Logo.svg" alt="Image 5">
                                 </a>
-                                <a href="https://example.com/link6" target="_blank">
-                                    <img src="asset/logoBrand/virbac-logo.svg" alt="Image 6">
+                                <a href="" target="_blank">
+                                    <img src="assets/imgs/logoBrand/virbac-logo.svg" alt="Image 6">
                                 </a>
                             </div>
                         </div>
@@ -56,14 +57,14 @@
                     <div class="dropdown">
                         <a href="/" class="drop-nav">Hewan</a>
                         <div class="dropdown-content">
-                            <a href="/KATEGORI/hewan/kucing/" class="this-page">Kucing</a>
-                            <a href="#">Anjing</a>
+                            <a href="/hewan/kucing/" class="this-page">Kucing</a>
+                            <a href="/hewan/anjing/">Anjing</a>
                             <a href="#">Hamster</a>
                             <a href="#">Kelinci</a>
                         </div>
                     </div>
                     <a href="#">Contact</a>
-                    <a href="#">Lokasi Toko</a>
+                    <a href="#lokasi">Lokasi Toko</a>
                 </div>
             </div>
         </div>
@@ -83,12 +84,39 @@
                 <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
               </svg></a>
         </div>
+
+           <!-- Header Icons -->
+        <div class="hidden xl:flex items-center space-x-5 items-center">
+          <a class="hover:text-gray-200" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+            </svg>
+          </a>
+          <a class="flex items-center hover:text-gray-200" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+            <span class="flex absolute -mt-5 ml-4">
+              <span class="animate-ping absolute inline-flex h-3 w-3 rounded-full bg-violet-400 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-3 w-3 bg-violet-500">
+                </span>
+              </span>
+          </a>
+          <!-- Sign In / Register      -->
+          <a class="flex items-center hover:text-gray-200" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-gray-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stro ke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+          </a>
+          
+        </div>
+        </div>  
     </header>
 
     <!--Banner home page-->
     <section>
         <div class="banner flex justify-center items-center w-full">  
-            <img src="/asset/logo/Banner.png" alt="banner" class="max-w-[1200px] w-full">
+            <img src="assets/imgs/logo/Banner.png" alt="banner" class="max-w-[1200px] w-full">
         </div>
     </section>
 
@@ -96,7 +124,7 @@
     <section class="flex justify-center items-center w-full">
         <div class="collections">
             <div class="collection-item">
-                <img src="asset/shortcut/Kaleng.jpeg" alt="Kaleng">
+                <img src="assets/imgs/shortCut/Kaleng.jpeg" alt="Kaleng">
                 <div class="overlay">
                     <h3>
                         Makanan Kaleng
@@ -109,7 +137,7 @@
                 </div>
             </div>
             <div class="collection-item">
-                <img src="asset/shortcut/pouch.jpeg" alt="Pouch">
+                <img src="assets/imgs/shortCut/Pouch.jpeg" alt="Pouch">
                 <div class="overlay">
                     <h3>
                         Makanan Pouch
@@ -122,7 +150,7 @@
                 </div>
             </div>
             <div class="collection-item">
-                <img src="asset/shortcut/pasir.jpeg" alt="Pasir">
+                <img src="assets/imgs/shortCut/Pasir.jpeg" alt="Pasir">
                 <div class="overlay">
                     <h3>
                         Pasir Kucing
@@ -137,158 +165,158 @@
         </div>
     </section>
 
-    <!--produk kuceng-->
-    <section class="product-section">
-        <h2 class="product-title">Produk Terlaris Kucing</h2>
-        <div class="product-container">
-            <div class="product-card">
-                <img src="asset/produkKucing/Kering/CC hijau.jpeg">
-                <div class="product-info">
-                    <h3>Cat Choize Adult Tuna</h3>
-                    <p class="price">Rp 17.000</p>
-                    <button class="add-to-cart">Beli</button>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <img src="asset/produkKucing/Kering/CC pink.jpg">
-                <div class="product-info">
-                    <h3>Cat Choize Kitten Tuna</h3>
-                    <p class="price">Rp 23.500</p>
-                    <button class="add-to-cart">Beli</button>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <img src="asset/produkKucing/Kering/Bolt ungu.jpg">
-                <div class="product-info">
-                    <h3>Bolt Tuna Cat Food</h3>
-                    <p class="price">Rp 16.500</p>
-                    <button class="add-to-cart">Beli</button>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <img src="asset/produkKucing/kaleng/lc adult k.jpg">
-                <div class="product-info">
-                    <h3>LC Tuna Adult Kaleng</h3>
-                    <p class="price">Rp 12.500</p>
-                    <button class="add-to-cart">Beli</button>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <img src="asset/produkKucing/Kering/me-o persian.png">
-                <div class="product-info">
-                    <h3>Meo Persian Dry</h3>
-                    <p class="price">Rp 52.000</p>
-                    <button class="add-to-cart">Beli</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!--Produk ASU-->
-    <section class="product-section">
-      <h2 class="product-title">Produk Terlaris Anjing</h2>
+     <!--produk kuceng-->
+     <section class="product-section">
+      <h2 class="product-title">Produk Terlaris Kucing</h2>
       <div class="product-container">
           <div class="product-card">
-              <img src="asset/produkAnjing/kering/Dc beef.jpg">
+              <img src="assets/imgs/produkKucing/Kering/CC hijau.jpeg" alt="gambar">
               <div class="product-info">
-                  <h3>Dog Choize Beef</h3>
-                  <p class="price">Rp 14.000</p>
+                  <h3>Cat Choize Adult Tuna</h3>
+                  <p class="price">Rp 17.000</p>
                   <button class="add-to-cart">Beli</button>
               </div>
           </div>
 
           <div class="product-card">
-              <img src="asset/produkAnjing/kering/perttopiabeef.jpg">
+              <img src="assets/imgs/produkKucing/Kering/CC pink.jpg" alt="gambar">
               <div class="product-info">
-                  <h3>Pet Topia Beef</h3>
-                  <p class="price">Rp 00.000</p>
+                  <h3>Cat Choize Kitten Tuna</h3>
+                  <p class="price">Rp 23.500</p>
                   <button class="add-to-cart">Beli</button>
               </div>
           </div>
 
           <div class="product-card">
-              <img src="asset/produkAnjing/pouch/shp chiken.jpeg">
+              <img src="assets/imgs/produkKucing/Kering/Bolt ungu.jpg" alt="gambar">
               <div class="product-info">
-                  <h3>Smart Heart Chicken</h3>
-                  <p class="price">Rp 00.000</p>
+                  <h3>Bolt Tuna Cat Food</h3>
+                  <p class="price">Rp 16.500</p>
                   <button class="add-to-cart">Beli</button>
               </div>
           </div>
 
           <div class="product-card">
-              <img src="asset/produkAnjing/kaleng/OIP.jpg">
+              <img src="assets/imgs/produkKucing/kaleng/lc adult k.jpg" alt="gambar">
               <div class="product-info">
-                  <h3>Life Dog Chicken</h3>
-                  <p class="price">Rp 00.000</p>
+                  <h3>LC Tuna Adult Kaleng</h3>
+                  <p class="price">Rp 12.500</p>
                   <button class="add-to-cart">Beli</button>
               </div>
           </div>
 
           <div class="product-card">
-              <img src="asset/produkAnjing/kering/boltBeef.jpg" >
+              <img src="assets/imgs/produkKucing/Kering/me-o persian.png" alt="gambar">
               <div class="product-info">
-                  <h3>Bolt Dog Beef</h3>
-                  <p class="price">Rp 00.000</p>
-                  <button class="add-to-cart">Beli</button>
-              </div>
-          </div>
-      </div>
-    </section>
-
-    <!--Produk terlaris DLL-->
-    <section class="product-section">
-      <h2 class="product-title">Produk Lainnya</h2>
-      <div class="product-container">
-          <div class="product-card">
-              <img src="asset/produkKelinci/animax.jpg">
-              <div class="product-info">
-                  <h3>Animax</h3>
-                  <p class="price">Rp 000.000</p>
-                  <button class="add-to-cart">Beli</button>
-              </div>
-          </div>
-
-          <div class="product-card">
-              <img src="asset/OIP.jpg" >
-              <div class="product-info">
-                  <h3>Takari 100g</h3>
-                  <p class="price">Rp 000.000</p>
-                  <button class="add-to-cart">Beli</button>
-              </div>
-          </div>
-
-          <div class="product-card">
-              <img src="asset/produkKucing/OIP (1).jpg">
-              <div class="product-info">
-                  <h3>Fish Oil </h3>
-                  <p class="price">Rp 00.000</p>
-                  <button class="add-to-cart">Beli</button>
-              </div>
-          </div>
-
-          <div class="product-card">
-              <img src="asset/produkKucing/ct/Meo crab.jpg">
-              <div class="product-info">
-                  <h3>Me-o CT Crab</h3>
-                  <p class="price">Rp 00.000</p>
-                  <button class="add-to-cart">Beli</button>
-              </div>
-          </div>
-
-          <div class="product-card">
-              <img src="asset/produkKucing/pasir/drclump 25l.jpg">
-              <div class="product-info">
-                  <h3>PAsir Dr. Clump 25L</h3>
-                  <p class="price">Rp 00.000</p>
+                  <h3>Meo Persian Dry</h3>
+                  <p class="price">Rp 52.000</p>
                   <button class="add-to-cart">Beli</button>
               </div>
           </div>
       </div>
   </section>
+
+  <!--Produk ASU-->
+  <section class="product-section">
+    <h2 class="product-title">Produk Terlaris Anjing</h2>
+    <div class="product-container">
+        <div class="product-card">
+            <img src="assets/imgs/produkAnjing/kering/Dc beef.jpg" alt="gambar">
+            <div class="product-info">
+                <h3>Dog Choize Beef</h3>
+                <p class="price">Rp 14.000</p>
+                <button class="add-to-cart">Beli</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="assets/imgs/produkAnjing/kering/perttopiabeef.jpg" alt="gambar">
+            <div class="product-info">
+                <h3>Pet Topia Beef</h3>
+                <p class="price">Rp 00.000</p>
+                <button class="add-to-cart">Beli</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="assets/imgs/produkAnjing/pouch/shp chiken.jpeg" alt="gambar">
+            <div class="product-info">
+                <h3>Smart Heart Chicken</h3>
+                <p class="price">Rp 00.000</p>
+                <button class="add-to-cart">Beli</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="assets/imgs/produkAnjing/kaleng/OIP.jpg" alt="gambar">
+            <div class="product-info">
+                <h3>Life Dog Chicken</h3>
+                <p class="price">Rp 00.000</p>
+                <button class="add-to-cart">Beli</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="assets/imgs/produkAnjing/kering/boltBeef.jpg" alt="gambar" >
+            <div class="product-info">
+                <h3>Bolt Dog Beef</h3>
+                <p class="price">Rp 00.000</p>
+                <button class="add-to-cart">Beli</button>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <!--Produk terlaris DLL-->
+  <section class="product-section">
+    <h2 class="product-title">Produk Lainnya</h2>
+    <div class="product-container">
+        <div class="product-card">
+            <img src="assets/imgs/produkKelinci/animax.jpg" alt="gambar">
+            <div class="product-info">
+                <h3>Animax</h3>
+                <p class="price">Rp 000.000</p>
+                <button class="add-to-cart">Beli</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="assets/imgs/OIP.jpg" alt="gambar">
+            <div class="product-info">
+                <h3>Takari 100g</h3>
+                <p class="price">Rp 000.000</p>
+                <button class="add-to-cart">Beli</button>
+            </div>
+        </div>  
+
+        <div class="product-card">
+            <img src="assets/imgs/produkKucing/OIP (1).jpg" alt="gambar">
+            <div class="product-info">
+                <h3>Fish Oil </h3>
+                <p class="price">Rp 00.000</p>
+                <button class="add-to-cart">Beli</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="assets/imgs/produkKucing/ct/Meo crab.jpg" alt="gambar">
+            <div class="product-info">
+                <h3>Me-o CT Crab</h3>
+                <p class="price">Rp 00.000</p>
+                <button class="add-to-cart">Beli</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="assets/imgs/produkKucing/pasir/drclump 25l.jpg" alt="gambar">
+            <div class="product-info">
+                <h3>Pasir Dr. Clump 25L</h3>
+                <p class="price">Rp 00.000</p>
+                <button class="add-to-cart">Beli</button>
+            </div>
+        </div>
+    </div>
+</section>
 
     <!--Footer e wak-->
     <footer style="background-color: #120b23;">
@@ -296,7 +324,7 @@
           <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
             <div>
               <div class="flex justify-center items-center sm:justify-start">
-                <img class="h-14 zpf" src="/asset/logo/zp.pnfg.png" alt="ZenPetshop">
+                <img class="h-14 zpf" src="assets/imgs/logo/zp.pnfg.png" alt="ZenPetshop">
                 <h1 class="text-white text-xl font-black">ZENPETSHOP</h1>
               </div>
       
@@ -540,7 +568,7 @@
                       href="/"
                     >
                       <svg
-                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns="http:/www.w3.org/2000/svg"
                         class="w-5 h-5 text-white shrink-0"
                         fill="none"
                         viewBox="0 0 24 24"
@@ -555,7 +583,7 @@
                       </svg>
       
                       <span class="text-white transition group-hover:text-white/75">
-                        john@doe.com
+                        zenpetshop@gmail.com
                       </span>
                     </a>
                   </li>
@@ -566,7 +594,7 @@
                       href="/"
                     >
                       <svg
-                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns="http:/www.w3.org/2000/svg"
                         class="w-5 h-5 text-white shrink-0"
                         fill="none"
                         viewBox="0 0 24 24"
@@ -581,7 +609,7 @@
                       </svg>
       
                       <span class="text-white transition group-hover:text-white/75">
-                        0123456789
+                        085161553456
                       </span>
                     </a>
                   </li>
@@ -590,7 +618,7 @@
                     class="flex items-start justify-center gap-1.5 sm:justify-start"
                   >
                     <svg
-                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns="http:/www.w3.org/2000/svg"
                       class="w-5 h-5 text-white shrink-0"
                       fill="none"
                       viewBox="0 0 24 24"
@@ -609,8 +637,8 @@
                       />
                     </svg>
       
-                    <address class="-mt-0.5 not-italic text-white">
-                      213 Lane, London, United Kingdom
+                    <address id="alamat-toko" class="-mt-0.5 not-italic text-white">
+                      Lidah Kulon, Kec. Lakarsantri, Surabaya, Jawa Timur 60213
                     </address>
                   </li>
                 </ul>
@@ -648,6 +676,7 @@
         </div>
       </footer>
   
-    <script src="main.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_API_KEY&libraries=places&callback=initGooglePlaces" async defer></script>
 </body>
 </html>
