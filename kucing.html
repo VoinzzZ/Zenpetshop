@@ -6,7 +6,7 @@
     <title>ZEN PETSHOP</title>
     <link rel="shortcut icon" href="/asset/paws.png" type="image/x-icon">
     <link href='https:/unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="assets/css/styleKucing.css">
+    <link rel="stylesheet" href="assets/css/hewan.css">
     <script src="https:/cdn.tailwindcss.com"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
@@ -25,29 +25,28 @@
                     </a>
                     <p class="tagline">Penuhi kebutuhan Peliharaan Disini!</p>
                 </div>
-
                 <!-- Navigasi utama nak header -->
                 <div class="navbar">
                     <div class="nav-item">
                         <a href="#" class="brand-nav">Brand</a>
                         <div class="hover-images">
                             <div class="image-row">
-                                <a href="https:/example.com/link1" target="_blank">
+                                <a href="" target="_blank">
                                     <img src="assets/imgs/logoBrand/Whiskas-Logo.svg" alt="Image 1">
                                 </a>
-                                <a href="https:/example.com/link2" target="_blank">
+                                <a href="" target="_blank">
                                     <img src="assets/imgs/logoBrand/bolt-cat.svg" alt="Image 2">
                                 </a>
-                                <a href="https:/example.com/link3" target="_blank">
+                                <a href="" target="_blank">
                                     <img src="assets/imgs/logoBrand/meo.svg" alt="Image 3">
                                 </a>
-                                <a href="https:/example.com/link4" target="_blank">
+                                <a href="" target="_blank">
                                     <img src="assets/imgs/logoBrand/Friskies-Logo.svg" alt="Image 4">
                                 </a>
-                                <a href="https:/example.com/link5" target="_blank">
+                                <a href="" target="_blank">
                                     <img src="assets/imgs/logoBrand/Royal-Canin-Logo.svg" alt="Image 5">
                                 </a>
-                                <a href="https:/example.com/link6" target="_blank">
+                                <a href="" target="_blank">
                                     <img src="assets/imgs/logoBrand/virbac-logo.svg" alt="Image 6">
                                 </a>
                             </div>
@@ -57,10 +56,10 @@
                     <div class="dropdown">
                         <a href="/" class="drop-nav">Hewan</a>
                         <div class="dropdown-content">
-                            <a href="/KATEGORI/hewan/kucing/" class="this-page" style="color: #c9a1fc;">Kucing</a>
-                            <a href="/KATEGORI/hewan/anjing/">Anjing</a>
-                            <a href="#">Hamster</a>
-                            <a href="#">Kelinci</a>
+                            <a href="kucing.html" class="this-page">Kucing</a>
+                            <a href="anjing.html">Anjing</a>
+                            <a href="hamster.html">Hamster</a>
+                            <a href="kelinci.html">Kelinci</a>
                         </div>
                     </div>
                     <a href="#">Contact</a>
@@ -68,28 +67,29 @@
                 </div>
             </div>
         </div>
-        
         <!-- Keanjang kuning tapi hytam-->
         <div class="icons-container">
             <div class="search-container">
                 <input type="text" placeholder="Search Product ..." class="search-input">
-                <button class="search-button"><i class='bx bx-search-alt' style='color:#ffffff'></i></button>
+                <button class="search-button bg-violet-400"><i class='bx bx-search-alt' style='color:#ffffff'></i></button>
             </div>
-
-           <!-- Header Icons -->
+        </div>
+         <!-- Header Icons -->
         <div class="hidden xl:flex items-center space-x-5 items-center">
-          <a class="hover:text-gray-200" href="#">
+          <!-- wishlist -->
+          <a class="hover:text-gray-200" href="/Wishlist & Cart/Wishlist/">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
             </svg>
           </a>
-          <a class="flex items-center hover:text-gray-200" href="#">
+          <!-- cart -->
+          <a class="flex items-center hover:text-gray-200" href="/Wishlist & Cart/Cart/">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
               </svg>
             <span class="flex absolute -mt-5 ml-4">
-              <span class="animate-ping absolute inline-flex h-3 w-3 rounded-full bg-pink-400 opacity-75"></span>
-                <span class="relative inline-flex rounded-full h-3 w-3 bg-pink-500">
+              <span class="animate-ping absolute inline-flex h-3 w-3 rounded-full bg-violet-400 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-3 w-3 bg-violet-500">
                 </span>
               </span>
           </a>
@@ -98,19 +98,28 @@
               <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-gray-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stro ke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
-            </a>
+          </a>
         </div>
-        </div>  
-    </header>
+    </header> 
 
     <section>
         <div class="title-product">
           <h2 class="title-pageIni">Kucing</h2>
           <h5 class="page-ini"><span>Hewan</span> <i class='bx bx-chevron-right'></i> Kucing</h5>
         </div>
+
+      <div class="navbar-2">
+        <div class="navbar">
+          <a href="#kering" class="">Kering</a>
+          <a href="#kaleng">Kaleng</a>
+          <a href="#ct" class="">Creamy-threats</a>
+          <a href="#pouch" class="">Pouch</a>
+          <a href="#pasir" class="">Pasir</a>
+        </div>
+      </div>
     </section>
 
-    <section class="product-section">
+    <section class="product-section" id="kering">
         <h2 class="product-title">Kering</h2>
         <div class="product-container">
             <div class="product-card">
@@ -254,7 +263,7 @@
         </div>
     </section>
 
-    <section class="product-section">
+    <section class="product-section" id="kaleng">
         <h2 class="product-title">Kaleng</h2>
         <div class="product-container">
             <div class="product-card">
@@ -398,7 +407,7 @@
         </div>
     </section>
 
-    <section class="product-section">
+    <section class="product-section" id="ct">
         <h2 class="product-title">Creamy-threats</h2>
         <div class="product-container">
             <div class="product-card">
@@ -542,7 +551,7 @@
         </div>
     </section>
 
-    <section class="product-section">
+    <section class="product-section" id="pouch">
         <h2 class="product-title">Pouch</h2>
         <div class="product-container">
             <div class="product-card">
@@ -686,7 +695,7 @@
         </div>
     </section>
 
-    <section class="product-section">
+    <section class="product-section" id="pasir">
         <h2 class="product-title">Pasir</h2>
         <div class="product-container">
             <div class="product-card">
