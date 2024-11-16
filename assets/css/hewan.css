@@ -477,6 +477,18 @@
     border-radius: 2px;
 }
 
-.navbar-2 {
-    margin-left: 15vh;
+.nav {
+    position: fixed;
+    text-decoration: none;
+    color: #000000;
+}
+
+.nav a:hover {
+    color: white;
+    background-color: #c9a1fc;
+    border-radius: 8px;
+}
+
+.product-section {
+    margin-left: 50px;
 }
