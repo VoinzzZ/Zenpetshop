@@ -66,7 +66,10 @@
     outline: #000000;
     -webkit-text-stroke: 0.7px rgb(255, 255, 255, 0.9);
     font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
 }
+
+
 
 .tagline {
     padding-top: 5%; 
@@ -274,8 +277,8 @@
 .text-container {
     text-align: left;
     margin-bottom: 10px;
+    text-decoration: none;
 }
-
 
 .logo-image-container {
     display: flex;
