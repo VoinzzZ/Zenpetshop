@@ -563,3 +563,141 @@
     font-weight: 1000;
 }
 
+/* cart */
+
+.cart table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cart .produk-info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cart th {
+    text-align: left;
+    padding: 5px 10px;
+    color: white;
+    background-color: #c9a1fc;
+}
+
+.cart td{
+    padding: 10px 20px;
+}
+
+.cart td img {
+    width: 80px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.cart td input {
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+
+.cart td a {
+    color: #c9a1fc;
+}
+
+.cart .tombol-remove {
+    color: #c9a1fc;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.cart .edit-btn {
+    color: #c9a1fc;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.cart .produk-info p {
+    margin: 3px;
+}
+
+.cart-total {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cart-total table {
+    width: 100%;
+    max-width: 500px;
+    border-top: 3px solid #c9a1fc;
+}
+
+td:last-child {
+    text-align: right;
+}
+
+th:last-child {
+    text-align: right;
+}
+
+.tombol-chekout {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.chekout {
+    background-color: #c9a1fc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.chekout:hover {
+    background-color: #b88af9;
+}
+
+/* loggin */
+
+#loggin-form {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #c9a1fc;
+}
+
+#loggin-form input {
+    width: 50%;
+    margin: 5px auto;
+}
+
+#loggin-form #loggin-btn {
+    background-color: #c9a1fc;
+    color: #fff;
+    border-radius: 8px;
+}
+
+/*Register*/
+
+#register-form {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #c9a1fc;
+}
+
+#register-form #register-btn {
+    background-color: #c9a1fc;
+    color: #fff;
+    border-radius: 8px;
+}
+
+#registers-form input {
+    width: 50%;
+    margin: 5px auto;
+}
+

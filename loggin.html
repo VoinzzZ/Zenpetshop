@@ -100,212 +100,34 @@
               </svg>
           </a>
         </div>
-    </header> 
+    </header>
 
-    <!--Banner home page-->
-    <section>
-        <div class="banner flex justify-center items-center w-full">  
-            <img src="assets/imgs/logo/Banner.png" alt="banner" class="max-w-[1200px] w-full">
+    <!--loggin-->
+    <section class="my-5 py-5">
+        <div class="container text-center mt-3 pt-5">
+            <h2 class="product-title">Loggin</h2>
+            <hr class="mx-auto">
+        </div>
+
+        <div class="mx-auto container">
+            <form id="loggin-form">
+                <div class="form-group">
+                    <label>Email</label><br>
+                    <input type="text" class="form-kontrol" id="loggin-email" name="email" placeholder="Email" required/>
+                </div>
+                <div class="form-group">
+                    <label>Password</label><br>
+                    <input type="password" class="form-kontrol" id="loggin-password" name="password" placeholder="Password" required/>
+                </div>
+                <div class="form-group">
+                    <input type="submit" class="btn" id="loggin-btn" value="Loggin"/>
+                </div>
+                <div class="form-group">
+                    <a id="register-url" class="btn">Belum punya akun? <span style="color:  #c9a1fc;">Daftar</span></a>
+                </div>
+            </form>
         </div>
     </section>
-
-    <!--Short cut barang nisor e banner-->
-    <section class="flex justify-center items-center w-full">
-        <div class="collections">
-            <div class="collection-item">
-                <img src="assets/imgs/shortCut/Kaleng.jpeg" alt="Kaleng">
-                <div class="overlay">
-                    <h3>
-                        Makanan Kaleng
-                    </h3>
-                    <p>
-                        BELI SEKARANG !!
-                        <i class="fas fa-arrow-right">
-                        </i>
-                    </p>
-                </div>
-            </div>
-            <div class="collection-item">
-                <img src="assets/imgs/shortCut/Pouch.jpeg" alt="Pouch">
-                <div class="overlay">
-                    <h3>
-                        Makanan Pouch
-                    </h3>
-                    <p>
-                        BELI SEKARANG !!
-                        <i class="fas fa-arrow-right">
-                        </i>
-                    </p>
-                </div>
-            </div>
-            <div class="collection-item">
-                <img src="assets/imgs/shortCut/Pasir.jpeg" alt="Pasir">
-                <div class="overlay">
-                    <h3>
-                        Pasir Kucing
-                    </h3>
-                    <p>
-                        BELI SEKARANG !!
-                        <i class="fas fa-arrow-right">
-                        </i>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-     <!--produk kuceng-->
-     <section class="product-section">
-      <h2 class="product-title">Produk Terlaris Kucing</h2>
-      <div class="product-container">
-          <div onclick="window.location.href='cat_choize_hjau.html'" class="product-card">
-              <img src="assets/imgs/produkKucing/Kering/CC hijau.jpeg" alt="gambar">
-              <div class="product-info">
-                  <h3>Cat Choize Adult Tuna</h3>
-                  <p class="price">Rp 17.000</p>
-                  <button onclick="window.location.href='single_product.html'" class="add-to-cart">Beli</button>
-              </div>
-          </div>
-
-          <div class="product-card">
-              <img src="assets/imgs/produkKucing/Kering/CC pink.jpg" alt="gambar">
-              <div class="product-info">
-                  <h3>Cat Choize Kitten Tuna</h3>
-                  <p class="price">Rp 23.500</p>
-                  <button class="add-to-cart">Beli</button>
-              </div>
-          </div>
-
-          <div class="product-card">
-              <img src="assets/imgs/produkKucing/Kering/Bolt ungu.jpg" alt="gambar">
-              <div class="product-info">
-                  <h3>Bolt Tuna Cat Food</h3>
-                  <p class="price">Rp 16.500</p>
-                  <button class="add-to-cart">Beli</button>
-              </div>
-          </div>
-
-          <div class="product-card">
-              <img src="assets/imgs/produkKucing/kaleng/lc adult k.jpg" alt="gambar">
-              <div class="product-info">
-                  <h3>LC Tuna Adult Kaleng</h3>
-                  <p class="price">Rp 12.500</p>
-                  <button class="add-to-cart">Beli</button>
-              </div>
-          </div>
-
-          <div class="product-card">
-              <img src="assets/imgs/produkKucing/Kering/me-o persian.png" alt="gambar">
-              <div class="product-info">
-                  <h3>Meo Persian Dry</h3>
-                  <p class="price">Rp 52.000</p>
-                  <button class="add-to-cart">Beli</button>
-              </div>
-          </div>
-      </div>
-  </section>
-
-  <!--Produk ASU-->
-  <section class="product-section">
-    <h2 class="product-title">Produk Terlaris Anjing</h2>
-    <div class="product-container">
-        <div class="product-card">
-            <img src="assets/imgs/produkAnjing/kering/Dc beef.jpg" alt="gambar">
-            <div class="product-info">
-                <h3>Dog Choize Beef</h3>
-                <p class="price">Rp 14.000</p>
-                <button class="add-to-cart">Beli</button>
-            </div>
-        </div>
-
-        <div class="product-card">
-            <img src="assets/imgs/produkAnjing/kering/perttopiabeef.jpg" alt="gambar">
-            <div class="product-info">
-                <h3>Pet Topia Beef</h3>
-                <p class="price">Rp 00.000</p>
-                <button class="add-to-cart">Beli</button>
-            </div>
-        </div>
-
-        <div class="product-card">
-            <img src="assets/imgs/produkAnjing/pouch/shp chiken.jpeg" alt="gambar">
-            <div class="product-info">
-                <h3>Smart Heart Chicken</h3>
-                <p class="price">Rp 00.000</p>
-                <button class="add-to-cart">Beli</button>
-            </div>
-        </div>
-
-        <div class="product-card">
-            <img src="assets/imgs/produkAnjing/kaleng/OIP.jpg" alt="gambar">
-            <div class="product-info">
-                <h3>Life Dog Chicken</h3>
-                <p class="price">Rp 00.000</p>
-                <button class="add-to-cart">Beli</button>
-            </div>
-        </div>
-
-        <div class="product-card">
-            <img src="assets/imgs/produkAnjing/kering/boltBeef.jpg" alt="gambar" >
-            <div class="product-info">
-                <h3>Bolt Dog Beef</h3>
-                <p class="price">Rp 00.000</p>
-                <button class="add-to-cart">Beli</button>
-            </div>
-        </div>
-    </div>
-  </section>
-
-  <!--Produk terlaris DLL-->
-  <section class="product-section">
-    <h2 class="product-title">Produk Lainnya</h2>
-    <div class="product-container">
-        <div class="product-card">
-            <img src="assets/imgs/produkKelinci/animax.jpg" alt="gambar">
-            <div class="product-info">
-                <h3>Animax</h3>
-                <p class="price">Rp 000.000</p>
-                <button onclick="window.location.href='single_product.html'" class="add-to-cart">Beli</button>
-            </div>
-        </div>
-
-        <div class="product-card">
-            <img src="assets/imgs/OIP.jpg" alt="gambar">
-            <div class="product-info">
-                <h3>Takari 100g</h3>
-                <p class="price">Rp 000.000</p>
-                <button class="add-to-cart">Beli</button>
-            </div>
-        </div>  
-
-        <div class="product-card">
-            <img src="assets/imgs/produkKucing/OIP (1).jpg" alt="gambar">
-            <div class="product-info">
-                <h3>Fish Oil </h3>
-                <p class="price">Rp 00.000</p>
-                <button class="add-to-cart">Beli</button>
-            </div>
-        </div>
-
-        <div class="product-card">
-            <img src="assets/imgs/produkKucing/ct/Meo crab.jpg" alt="gambar">
-            <div class="product-info">
-                <h3>Me-o CT Crab</h3>
-                <p class="price">Rp 00.000</p>
-                <button class="add-to-cart">Beli</button>
-            </div>
-        </div>
-
-        <div class="product-card">
-            <img src="assets/imgs/produkKucing/pasir/drclump 25l.jpg" alt="gambar">
-            <div class="product-info">
-                <h3>Pasir Dr. Clump 25L</h3>
-                <p class="price">Rp 00.000</p>
-                <button class="add-to-cart">Beli</button>
-            </div>
-        </div>
-    </div>
-</section>
 
     <!--Footer e wak-->
     <footer style="background-color: #120b23;">
