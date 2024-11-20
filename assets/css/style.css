@@ -753,3 +753,49 @@ th:last-child {
     color: #c9a1fc;
     font-size: 18px;
 }
+
+/*lokasi toko wak*/
+.location {
+    justify-content: space-between;
+}
+
+.location-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.location-description {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.location-title {
+    font-size: 24px;
+    color: #c9a1fc;
+    margin-bottom: 10px;
+}
+
+.location-text {
+    font-size: 20   px;
+    color: #333;
+}
+
+.location-header {
+    font-size: 28px;
+    color: #c9a1fc;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.back-home{
+    background-color: #c9a1fc;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 300px;
+}
